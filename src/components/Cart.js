@@ -1,21 +1,11 @@
-// src/components/Cart.js
 import React from 'react';
 
 /**
- * Cart Component
- * Displays the current shopping cart contents, total price, item counts,
- * and allows users to remove individual items from the cart.
- *
- * Props:
- * - cart: Array of items currently in the cart
- * - handleRemoveFromCart: Function to remove a product from the cart by its ID
- * - handleClearCart: Function to empty the entire cart
+ * Cart Drawer
+ * Displays active cart items, itemized quantities, and total order computations.
  */
 const Cart = ({ cart, handleRemoveFromCart, handleClearCart }) => {
-  // Calculate total price of all items in cart
   const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-
-  // Calculate total number of individual items
   const totalItemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
@@ -49,7 +39,7 @@ const Cart = ({ cart, handleRemoveFromCart, handleClearCart }) => {
                 <button 
                   className="remove-item-btn" 
                   onClick={() => handleRemoveFromCart(item.id)}
-                  title="Remove one item from cart"
+                  title="Remove item"
                   aria-label={`Remove ${item.name} from cart`}
                 >
                   ✕
@@ -65,7 +55,7 @@ const Cart = ({ cart, handleRemoveFromCart, handleClearCart }) => {
             </div>
             <button 
               className="checkout-btn" 
-              onClick={() => alert('Order Placed Successfully! Thank you for testing our store.')}
+              onClick={() => alert('Order Placed Successfully!')}
             >
               Proceed to Checkout
             </button>

@@ -1,14 +1,9 @@
-// src/components/ProductList.js
 import React from 'react';
 import ProductCard from './ProductCard';
 
 /**
- * ProductList Component
- * Accepts an array of products and maps through them, rendering a ProductCard for each item.
- *
- * Props:
- * - products: Array of product objects
- * - handleAddToCart: Function passed down to ProductCard for handling item additions to cart
+ * ProductList
+ * Renders grid layout of product items.
  */
 const ProductList = ({ products, handleAddToCart }) => {
   return (

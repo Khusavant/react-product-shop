@@ -1,7 +1,6 @@
-// src/data/products.js
-// Plain JS array of product objects used across the application.
-// Having product data in a separate file makes it clean and easy to maintain or swap with an API call later.
-
+/**
+ * Product Data Catalog
+ */
 const products = [
   {
     id: 1,

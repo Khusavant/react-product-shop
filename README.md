@@ -1,6 +1,6 @@
 # 🛍️ React Product Shop — Product Listing & Cart UI
 
-A clean, beginner-friendly React product listing application that demonstrates real-time state management using React Hooks (`useState`). Users can explore a curated grid of tech products, add items to a dynamic shopping cart, adjust item quantities, and inspect real-time total calculations.
+A responsive React e-commerce application demonstrating component-driven architecture, modular state management with React Hooks (`useState`), and CSS Grid/Flexbox layout systems. Users can explore a curated product catalog, manage shopping cart quantities in real-time, and view dynamic order total calculations.
 
 ---
 

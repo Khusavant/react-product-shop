@@ -1,14 +1,8 @@
-// src/components/ProductCard.js
 import React from 'react';
 
 /**
- * ProductCard Component
- * Displays individual product details (image, title, category, price, description)
- * and provides an "Add to Cart" button that triggers a callback function passed from the parent.
- *
- * Props:
- * - product: Object containing product details (id, name, price, image, category, description)
- * - handleAddToCart: Function called when the user clicks the "Add to Cart" button
+ * ProductCard
+ * Renders individual product details and handles add-to-cart user actions.
  */
 const ProductCard = ({ product, handleAddToCart }) => {
   return (
